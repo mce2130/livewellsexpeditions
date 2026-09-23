@@ -15,7 +15,7 @@ html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--b);-w
 img{display:block;max-width:100%}
 a{color:var(--accent-deep);text-decoration:none}
 a:hover{color:var(--ink)}
-.w{width:100%;max-width:1240px;margin:0 auto;padding:0 clamp(20px,4.5vw,64px)}
+.w{width:100%;max-width:none;margin:0;padding:0 clamp(20px,4.5vw,72px)}
 .k{font-family:var(--h);text-transform:uppercase;letter-spacing:.28em;font-size:clamp(11px,1.15vw,14px)}
 .big{font-family:var(--h);text-transform:uppercase;line-height:.88;margin:0;font-weight:500}
 .p{font-size:clamp(16px,1.65vw,21px);line-height:1.6;text-wrap:pretty;margin:0}
@@ -83,6 +83,24 @@ a:hover{color:var(--ink)}
     white-space: nowrap;
   }
 }
+  /* 03 — GO FURTHER */
+.go-further-section{
+  min-height:min(100vh,66.67vw);
+}
+
+.go-further-section > .bg{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center center;
+}
+
+@media (max-width:760px){
+  .go-further-section{
+    min-height:85vh;
+  }
+}
+  
 </style>
 </head>
 <body>
@@ -118,11 +136,11 @@ a:hover{color:var(--ink)}
 </section>
 
 <!-- 03 GO FURTHER -->
-<section class="full" style="min-height:clamp(680px,92vh,940px);display:flex;flex-direction:column;justify-content:space-between">
+<section class="full go-further-section" style="display:flex;flex-direction:column;justify-content:space-between">
   <img class="bg" src="images/go-further.jpg" alt="Two hikers with arms raised below the towers of Torres del Paine">
   <div class="veil" style="background:linear-gradient(to bottom,rgba(16,26,36,.05) 0%,rgba(16,26,36,.10) 38%,rgba(16,26,36,.42) 68%,rgba(16,26,36,.92) 100%)"></div>
 
-<div class="band" style="padding-top:clamp(42px,6vw,84px);padding-left:clamp(42px,4.5vw,72px);padding-right:clamp(42px,4.5vw,72px)">
+<div class="w band" style="padding-top:clamp(42px,6vw,84px)">
   <div class="k" style="color:#9fc9ee;opacity:1;margin-bottom:clamp(22px,3vw,40px)">03</div>
     <h2 class="big" style="font-size:clamp(68px,9.5vw,150px);font-weight:400;line-height:.9;letter-spacing:-.025em;margin:0">
       GO FURTHER.
