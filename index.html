@@ -42,22 +42,65 @@ a:hover{color:var(--ink)}
 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(28px,4vw,60px);align-items:center}
 .oneline{white-space:nowrap}
 @media (max-width:760px){.oneline{white-space:normal}}
+/* HERO — DESKTOP */
+.hero-title {
+  font-size: clamp(58px, 7.1vw, 112px);
+  font-weight: 400;
+  letter-spacing: .01em;
+}
+
+/* HERO — MOBILE */
+@media (max-width: 760px) {
+  .hero-title {
+    font-size: clamp(52px, 16vw, 82px);
+  }
+}
+.hero-section {
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-section > .bg {
+  object-position: center center;
+}
+
+@media (min-width: 1000px) {
+  .hero-section {
+    min-height: 780px;
+    max-height: 900px;
+  }
+}
+.hero-intro {
+  font-size: clamp(17px, 1.5vw, 22px);
+  color: rgba(242,242,243,.94);
+  max-width: 1000px;
+}
+
+@media (min-width: 1000px) {
+  .hero-intro {
+    white-space: nowrap;
+  }
+}
 </style>
 </head>
 <body>
 
 <!-- 01 HERO -->
-<section class="full" style="min-height:clamp(560px,92vh,940px);display:flex;flex-direction:column;justify-content:space-between">
-  <img class="bg" src="images/hero.jpg" alt="The granite horns of Torres del Paine above a still lake">
+<section class="full hero-section">
+<img class="bg" src="images/hero.jpg" alt="The granite horns of Torres del Paine above a still lake">
   <div class="veil" style="background:linear-gradient(to bottom,rgba(16,26,36,.62) 0%,rgba(16,26,36,.1) 30%,rgba(16,26,36,.72) 72%,rgba(16,26,36,.95) 100%)"></div>
   <div class="w band" style="padding-top:clamp(30px,4vw,52px);display:flex;justify-content:space-between;gap:24px">
     <span style="font-family:var(--h);text-transform:uppercase;letter-spacing:.2em;font-size:clamp(17px,2vw,26px)">Ignite in the Wild</span>
     <span class="k" style="color:rgba(242,242,243,.8)">50°S</span>
   </div>
   <div class="w band" style="padding-bottom:clamp(40px,6vw,84px);display:flex;flex-direction:column;gap:clamp(20px,2.8vw,34px)">
-    <h1 class="big" style="font-size:clamp(46px,10vw,142px);font-weight:400;letter-spacing:.01em">Livewells™<br><span style="color:var(--accent-light)">Expeditions</span></h1>
-    <div class="rule" style="background:rgba(242,242,243,.38)"></div>
-    <p class="p" style="font-size:clamp(17px,2vw,25px);color:rgba(242,242,243,.94);max-width:860px">Small-group expeditions built around adventure, recovery and human connection.</p>
+<h1 class="big hero-title">
+  Livewells™<br>
+  <span style="color:var(--accent-light)">Expeditions</span>
+</h1>   <div class="rule" style="background:rgba(242,242,243,.38)"></div>
+    <p class="p hero-intro">Small-group expeditions built around adventure, recovery and human connection.</p>
     <div><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeVHOT15DfnyjIFlW8cMSM1Bbctl6IoP1zCNfnIcvrivAq0dg/viewform">Join the expedition</a></div>
   </div>
 </section>
