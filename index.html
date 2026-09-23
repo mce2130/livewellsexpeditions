@@ -110,8 +110,9 @@ a:hover{color:var(--ink)}
 /* 04 — BUILT DIFFERENTLY */
 .grid6{
   display:grid;
-  grid-template-columns:repeat(3, minmax(0,1fr));
-  gap:clamp(30px,3vw,48px) clamp(24px,2.8vw,40px);
+  grid-template-columns:repeat(3, 1fr);
+  column-gap:clamp(28px,3vw,42px);
+  row-gap:clamp(34px,4vw,54px);
   width:100%;
 }
 
@@ -223,7 +224,7 @@ a:hover{color:var(--ink)}
 </section>
 
 <!-- 04 WHO IT'S FOR -->
-<section style="background:var(--bg);border-bottom:1px solid var(--line)">
+<div class="w grid6" style="max-width:1160px;padding-bottom:clamp(60px,9vw,130px)">
   <div class="w" style="padding-top:clamp(60px,9vw,130px);padding-bottom:clamp(30px,4vw,52px);display:flex;flex-direction:column;gap:clamp(14px,2vw,24px)">
     <div class="k" style="color:var(--accent-deep)">04</div>
     <h2 class="big" style="font-size:clamp(46px,8.6vw,128px)">Built for those who move differently.</h2>
