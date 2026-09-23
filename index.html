@@ -110,9 +110,10 @@ a:hover{color:var(--ink)}
 
 /* 05 — THE PEOPLE */
 .people-section{
-  min-height:min(100vh,66.67vw);
-  display:flex;
-  align-items:flex-end;
+  height:min(100vh,66.67vw);
+  min-height:760px;
+  position:relative;
+  overflow:hidden;
 }
 
 .people-section > .bg{
@@ -124,7 +125,12 @@ a:hover{color:var(--ink)}
 
 @media (max-width:760px){
   .people-section{
-    min-height:85vh;
+    height:90vh;
+    min-height:680px;
+  }
+
+  .people-section > .bg{
+    object-position:center center;
   }
 }
   
@@ -232,7 +238,7 @@ a:hover{color:var(--ink)}
 </section>
 
   <!-- 05 THE PEOPLE -->
-<section class="full" style="min-height:clamp(680px,86vh,900px);display:flex;align-items:flex-end">
+<section class="full people-section" style="display:flex;align-items:flex-end">
   <img class="bg" src="images/the-people.jpg" alt="A group of friends smiling together in the mountains" loading="lazy">
 
   <div class="veil" style="background:linear-gradient(to bottom,rgba(16,26,36,.08) 0%,rgba(16,26,36,.10) 30%,rgba(16,26,36,.50) 66%,rgba(16,26,36,.92) 100%)"></div>
