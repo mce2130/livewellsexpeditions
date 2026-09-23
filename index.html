@@ -399,71 +399,149 @@ a:hover{color:var(--ink)}
 </section>
 
 <!-- 07 THE INVITATION -->
-<section id="invitation" class="full" style="min-height:clamp(560px,88vh,920px);display:flex;align-items:flex-end;position:relative;overflow:hidden">
+<section id="invitation" class="full" style="
+  position:relative;
+  width:100%;
+  aspect-ratio:3 / 2;
+  min-height:0;
+  overflow:hidden;
+  display:flex;
+  align-items:stretch;
+">
 
   <img
     class="bg"
     src="images/expedition-001.jpg"
     alt="The Cuernos del Paine reflected in a lake at sunset"
     loading="lazy"
-    style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center"
+    style="
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center center;
+    "
   >
 
   <div
     class="veil"
-    style="background:linear-gradient(to bottom,rgba(16,26,36,.4) 0%,rgba(16,26,36,.1) 26%,rgba(16,26,36,.82) 66%,rgba(16,26,36,.97) 100%)"
+    style="
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(16,26,36,.16) 0%,
+          rgba(16,26,36,.16) 25%,
+          rgba(16,26,36,.48) 58%,
+          rgba(16,26,36,.92) 100%
+        );
+    "
   ></div>
 
-  <div
-    class="w band"
-    style="padding-top:clamp(52px,8vw,118px);padding-bottom:clamp(52px,8vw,118px);display:flex;flex-direction:column;gap:clamp(20px,2.8vw,34px);position:relative;z-index:2"
-  >
+  <div class="w" style="
+    position:relative;
+    z-index:2;
+    width:100%;
+    height:100%;
+    padding-top:clamp(50px,6vw,95px);
+    padding-bottom:clamp(55px,7vw,110px);
+    display:flex;
+    flex-direction:column;
+  ">
 
-    <div class="k" style="color:rgba(242,242,243,.86)">
-      Livewells™ Expeditions
+    <div class="k" style="
+      color:rgba(242,242,243,.88);
+      margin-bottom:clamp(42px,5vw,78px);
+    ">
+      LIVEWELLS™ EXPEDITIONS
     </div>
 
-    <h2 class="big" style="font-size:clamp(56px,11.5vw,160px);line-height:.9;margin:0">
-      Ignite in the wild
+    <h2 class="big" style="
+      font-size:clamp(64px,8.4vw,132px);
+      font-weight:400;
+      line-height:.9;
+      letter-spacing:.01em;
+      margin:0;
+      white-space:nowrap;
+    ">
+      IGNITE IN THE WILD
     </h2>
 
-    <div class="rule" style="background:rgba(242,242,243,.36)"></div>
+    <div class="rule" style="
+      background:rgba(242,242,243,.38);
+      margin-top:clamp(30px,3.5vw,54px);
+      margin-bottom:clamp(30px,3.5vw,52px);
+    "></div>
 
-    <div
-      style="display:flex;flex-wrap:wrap;gap:clamp(16px,3.4vw,56px);font-family:var(--h);text-transform:uppercase;letter-spacing:.18em;font-size:clamp(14px,1.7vw,22px)"
-    >
-      <span>Feb 12–18, 2027</span>
-      <span>Six days</span>
-      <span>Twelve people</span>
-      <span>Puerto Natales, Chile</span>
+    <div style="
+      display:flex;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:clamp(28px,4vw,70px);
+      font-family:var(--h);
+      text-transform:uppercase;
+      letter-spacing:.18em;
+      font-size:clamp(14px,1.35vw,21px);
+      margin-bottom:clamp(38px,4.5vw,68px);
+    ">
+      <span>FEB 12–18, 2027</span>
+      <span>SIX DAYS</span>
+      <span>TWELVE PEOPLE</span>
+      <span>PUERTO NATALES, CHILE</span>
     </div>
 
-    <p class="p" style="color:rgba(242,242,243,.9);max-width:860px">
-      Torres del Paine · Puma Tracking · Fjord Kayaking · Cerro Tenerife · Horseback with Gauchos · Sauna &amp; Recovery · Glacier Plunges · Patagonian Asado · Whisky by the Fire
+    <p class="p" style="
+      color:rgba(242,242,243,.94);
+      max-width:1180px;
+      font-size:clamp(17px,1.55vw,24px);
+      line-height:1.55;
+      margin:0 0 clamp(38px,4vw,62px) 0;
+    ">
+      Torres del Paine · Puma Tracking · Fjord Kayaking · Cerro Tenerife · Horseback with Gauchos · Sauna &amp; Recovery · Glacier Plunges · Patagonian Asado · Whisky by the Fire · Celebrations Done Properly
     </p>
 
-    <p class="big" style="font-size:clamp(20px,2.4vw,32px);line-height:1.15;letter-spacing:.02em">
-      It’s time to write your own story.<br>
-      Go somewhere that stays with you.
-    </p>
+    <div class="big" style="
+      font-size:clamp(18px,1.65vw,26px);
+      line-height:1.25;
+      letter-spacing:.015em;
+      text-transform:uppercase;
+      margin:0;
+    ">
+      IT'S TIME TO WRITE YOUR OWN STORY. GO SOMEWHERE THAT STAYS WITH YOU.
+    </div>
 
-    <div class="pill-row" style="gap:clamp(14px,2.4vw,28px);margin-top:clamp(14px,2.6vw,34px)">
+    <div style="
+      margin-top:auto;
+      display:flex;
+      align-items:center;
+      gap:clamp(30px,3.5vw,56px);
+      flex-wrap:wrap;
+    ">
 
       <a
         class="btn"
         href="https://docs.google.com/forms/d/e/1FAIpQLSeVHOT15DfnvjIFIW8cMSM1BbctI6IoP1zCNfnIcvriVAq0dg/viewform"
+        style="
+          min-width:clamp(280px,24vw,370px);
+          text-align:center;
+        "
       >
-        Request an invitation
+        REQUEST AN INVITATION
       </a>
 
-      <span class="k" style="color:rgba(242,242,243,.7)">
-        Twelve seats · reviewed personally
+      <span class="k" style="
+        color:rgba(242,242,243,.72);
+        white-space:nowrap;
+      ">
+        TWELVE SEATS · REVIEWED PERSONALLY
       </span>
 
     </div>
 
   </div>
 </section>
-
+  
   </body>
 </html>
