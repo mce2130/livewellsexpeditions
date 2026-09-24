@@ -463,6 +463,7 @@ a:hover{color:var(--ink)}
   overflow:hidden;
 ">
 
+  <!-- BACKGROUND IMAGE -->
   <img
     class="bg"
     src="images/expedition-001.jpg"
@@ -475,24 +476,28 @@ a:hover{color:var(--ink)}
       height:100%;
       object-fit:cover;
       object-position:center center;
+      display:block;
     "
   >
 
+  <!-- DARK GRADIENT -->
   <div class="veil" style="
     position:absolute;
     inset:0;
+    z-index:1;
     background:
       linear-gradient(
         to bottom,
         rgba(16,26,36,.10) 0%,
-        rgba(16,26,36,.14) 28%,
-        rgba(16,26,36,.42) 60%,
-        rgba(16,26,36,.90) 100%
+        rgba(16,26,36,.12) 25%,
+        rgba(16,26,36,.24) 48%,
+        rgba(16,26,36,.54) 70%,
+        rgba(16,26,36,.92) 100%
       );
   "></div>
 
 
-  <!-- BRAND LABEL STAYS HIGH -->
+  <!-- LIVEWELLS LABEL STAYS HIGH -->
   <div class="k" style="
     position:absolute;
     z-index:3;
@@ -504,85 +509,97 @@ a:hover{color:var(--ink)}
   </div>
 
 
-  <!-- EVERYTHING BELOW THIS POINT MOVES DOWN -->
+  <!-- LOWER CONTENT COMPOSITION -->
   <div style="
     position:absolute;
     z-index:3;
     left:4.2%;
     right:4.2%;
-    top:30%;
-    bottom:7%;
+    bottom:6%;
     display:flex;
     flex-direction:column;
   ">
 
-    <h2 class="big" style="
-      font-size:clamp(64px,8.4vw,132px);
-      font-weight:400;
-      line-height:.88;
-      letter-spacing:.01em;
-      margin:0;
-      white-space:nowrap;
-    ">
-      IGNITE IN THE WILD
-    </h2>
 
-
-    <div class="rule" style="
-      background:rgba(242,242,243,.38);
-      margin-top:clamp(26px,2.7vw,42px);
-      margin-bottom:clamp(27px,2.8vw,44px);
-    "></div>
-
-
+    <!-- IGNITE + EXPEDITION INFORMATION -->
     <div style="
-      display:flex;
-      align-items:center;
-      flex-wrap:wrap;
-      gap:clamp(30px,4vw,70px);
-      font-family:var(--h);
-      text-transform:uppercase;
-      letter-spacing:.18em;
-      font-size:clamp(14px,1.35vw,21px);
-      margin-bottom:clamp(36px,3.8vw,58px);
+      margin-bottom:clamp(38px,3.8vw,58px);
     ">
-      <span>FEB 12–18, 2027</span>
-      <span>SIX DAYS</span>
-      <span>TWELVE PEOPLE</span>
-      <span>PUERTO NATALES, CHILE</span>
+
+      <h2 class="big" style="
+        font-size:clamp(58px,7vw,112px);
+        font-weight:400;
+        line-height:.88;
+        letter-spacing:.01em;
+        margin:0;
+        white-space:nowrap;
+        color:var(--paper);
+      ">
+        IGNITE IN THE WILD
+      </h2>
+
+
+      <!-- RULE -->
+      <div class="rule" style="
+        background:rgba(242,242,243,.38);
+        margin-top:clamp(20px,2vw,32px);
+        margin-bottom:clamp(22px,2.2vw,34px);
+      "></div>
+
+
+      <!-- DATE / LENGTH / GROUP / LOCATION -->
+      <div style="
+        display:flex;
+        align-items:center;
+        flex-wrap:wrap;
+        gap:clamp(28px,4vw,70px);
+        font-family:var(--h);
+        text-transform:uppercase;
+        letter-spacing:.18em;
+        font-size:clamp(13px,1.2vw,19px);
+        color:var(--paper);
+        margin-bottom:clamp(24px,2.5vw,38px);
+      ">
+        <span>FEB 12–18, 2027</span>
+        <span>SIX DAYS</span>
+        <span>TWELVE PEOPLE</span>
+        <span>PUERTO NATALES, CHILE</span>
+      </div>
+
+
+      <!-- EXPERIENCE LIST -->
+      <p class="p" style="
+        color:rgba(242,242,243,.94);
+        max-width:1250px;
+        font-size:clamp(16px,1.35vw,22px);
+        line-height:1.5;
+        margin:0 0 clamp(22px,2.2vw,34px) 0;
+      ">
+        Torres del Paine · Puma Tracking · Fjord Kayaking · Cerro Tenerife · Horseback with Gauchos · Sauna &amp; Recovery · Glacier Plunges · Patagonian Asado · Whisky by the Fire · Celebrations Done Properly
+      </p>
+
+
+      <!-- FINAL STATEMENT -->
+      <div class="big" style="
+        font-size:clamp(17px,1.4vw,23px);
+        line-height:1.25;
+        letter-spacing:.015em;
+        text-transform:uppercase;
+        margin:0;
+        color:var(--paper);
+      ">
+        IT'S TIME TO WRITE YOUR OWN STORY. GO SOMEWHERE THAT STAYS WITH YOU.
+      </div>
+
     </div>
 
 
-    <p class="p" style="
-      color:rgba(242,242,243,.94);
-      max-width:1250px;
-      font-size:clamp(17px,1.5vw,24px);
-      line-height:1.55;
-      margin:0 0 clamp(30px,3vw,46px) 0;
-    ">
-      Torres del Paine · Puma Tracking · Fjord Kayaking · Cerro Tenerife · Horseback with Gauchos · Sauna &amp; Recovery · Glacier Plunges · Patagonian Asado · Whisky by the Fire · Celebrations Done Properly
-    </p>
-
-
-    <div class="big" style="
-      font-size:clamp(18px,1.55vw,25px);
-      line-height:1.25;
-      letter-spacing:.015em;
-      text-transform:uppercase;
-      margin:0;
-    ">
-      IT'S TIME TO WRITE YOUR OWN STORY. GO SOMEWHERE THAT STAYS WITH YOU.
-    </div>
-
-
-    <!-- CTA ANCHORED ABOVE BOTTOM -->
+    <!-- CTA ROW -->
     <div style="
-      margin-top:auto;
       display:flex;
       align-items:center;
       gap:clamp(30px,3.5vw,56px);
       flex-wrap:wrap;
-      padding-bottom:clamp(20px,2vw,32px);
     ">
 
       <a
