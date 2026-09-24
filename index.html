@@ -162,21 +162,132 @@ a:hover{color:var(--ink)}
 <body>
 
 <!-- 01 HERO -->
-<section class="full hero-section">
-<img class="bg" src="images/hero.jpg" alt="The granite horns of Torres del Paine above a still lake">
-  <div class="veil" style="background:linear-gradient(to bottom,rgba(16,26,36,.62) 0%,rgba(16,26,36,.1) 30%,rgba(16,26,36,.72) 72%,rgba(16,26,36,.95) 100%)"></div>
-  <div class="w band" style="padding-top:clamp(30px,4vw,52px);display:flex;justify-content:space-between;gap:24px">
-    <span style="font-family:var(--h);text-transform:uppercase;letter-spacing:.2em;font-size:clamp(17px,2vw,26px)">Ignite in the Wild</span>
-    <span class="k" style="color:rgba(242,242,243,.8)">50°S</span>
+<section class="full hero-section" style="
+  position:relative;
+  width:100%;
+  aspect-ratio:3 / 2;
+  min-height:760px;
+  overflow:hidden;
+">
+
+  <img
+    class="bg"
+    src="images/hero.jpg"
+    alt="The granite horns of Torres del Paine above a still lake"
+    style="
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center center;
+    "
+  >
+
+  <div
+    class="veil"
+    style="
+      position:absolute;
+      inset:0;
+      background:linear-gradient(
+        to bottom,
+        rgba(16,26,36,.62) 0%,
+        rgba(16,26,36,.10) 30%,
+        rgba(16,26,36,.72) 72%,
+        rgba(16,26,36,.95) 100%
+      );
+    "
+  ></div>
+
+  <div
+    class="w"
+    style="
+      position:relative;
+      z-index:2;
+      width:100%;
+      height:100%;
+      min-height:760px;
+      padding-top:clamp(35px,4vw,52px);
+      padding-bottom:clamp(42px,5vw,80px);
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    "
+  >
+
+    <div style="
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      width:100%;
+    ">
+      <span style="
+        font-family:var(--h);
+        text-transform:uppercase;
+        letter-spacing:.2em;
+        font-size:clamp(17px,2vw,26px);
+      ">
+        Ignite in the Wild
+      </span>
+
+      <span class="k" style="color:rgba(242,242,243,.8)">
+        50°S
+      </span>
+    </div>
+
+    <div
+      class="band"
+      style="
+        padding-bottom:0;
+        display:flex;
+        flex-direction:column;
+        gap:clamp(20px,2.8vw,34px);
+      "
+    >
+
+      <h1
+        class="big hero-title"
+        style="
+          margin:0;
+          font-weight:400;
+          line-height:.88;
+        "
+      >
+        Livewells™<br>
+        <span style="color:var(--accent-light)">
+          Expeditions
+        </span>
+      </h1>
+
+      <div
+        class="rule"
+        style="
+          background:rgba(242,242,243,.38);
+        "
+      ></div>
+
+      <p
+        class="p hero-intro"
+        style="
+          margin:0;
+        "
+      >
+        Small-group expeditions built around adventure, recovery and human connection.
+      </p>
+
+      <div>
+        <a
+          class="btn"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeVHOT15DfnvjIFIW8cMSM1BbctI6IoP1zCNfnIcvriVAq0dg/viewform"
+        >
+          Join the expedition
+        </a>
+      </div>
+
+    </div>
+
   </div>
-  <div class="w band" style="padding-bottom:clamp(40px,6vw,84px);display:flex;flex-direction:column;gap:clamp(20px,2.8vw,34px)">
-<h1 class="big hero-title">
-  Livewells™<br>
-  <span style="color:var(--accent-light)">Expeditions</span>
-</h1>   <div class="rule" style="background:rgba(242,242,243,.38)"></div>
-    <p class="p hero-intro">Small-group expeditions built around adventure, recovery and human connection.</p>
-    <div><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeVHOT15DfnyjIFlW8cMSM1Bbctl6IoP1zCNfnIcvrivAq0dg/viewform">Join the expedition</a></div>
-  </div>
+
 </section>
 
 <!-- 02 NOT A RETREAT -->
