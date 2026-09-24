@@ -165,8 +165,8 @@ a:hover{color:var(--ink)}
 <section class="full hero-section" style="
   position:relative;
   width:100%;
-  aspect-ratio:3 / 2;
-  min-height:760px;
+  height:100vh;
+  min-height:800px;
   overflow:hidden;
 ">
 
@@ -184,37 +184,32 @@ a:hover{color:var(--ink)}
     "
   >
 
-  <div
-    class="veil"
-    style="
-      position:absolute;
-      inset:0;
-      background:linear-gradient(
+  <div class="veil" style="
+    position:absolute;
+    inset:0;
+    background:
+      linear-gradient(
         to bottom,
-        rgba(16,26,36,.62) 0%,
-        rgba(16,26,36,.10) 30%,
-        rgba(16,26,36,.72) 72%,
-        rgba(16,26,36,.95) 100%
+        rgba(16,26,36,.24) 0%,
+        rgba(16,26,36,.08) 30%,
+        rgba(16,26,36,.30) 55%,
+        rgba(16,26,36,.78) 82%,
+        rgba(16,26,36,.96) 100%
       );
-    "
-  ></div>
+  "></div>
 
-  <div
-    class="w"
-    style="
-      position:relative;
-      z-index:2;
-      width:100%;
-      height:100%;
-      min-height:760px;
-      padding-top:clamp(35px,4vw,52px);
-      padding-bottom:clamp(42px,5vw,80px);
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-    "
-  >
+  <div class="w" style="
+    position:relative;
+    z-index:2;
+    width:100%;
+    height:100%;
+    padding-top:clamp(45px,5vw,72px);
+    padding-bottom:clamp(55px,6vw,90px);
+    display:flex;
+    flex-direction:column;
+  ">
 
+    <!-- TOP LINE -->
     <div style="
       display:flex;
       justify-content:space-between;
@@ -224,72 +219,67 @@ a:hover{color:var(--ink)}
       <span style="
         font-family:var(--h);
         text-transform:uppercase;
-        letter-spacing:.2em;
-        font-size:clamp(17px,2vw,26px);
+        letter-spacing:.22em;
+        font-size:clamp(15px,1.3vw,21px);
       ">
-        Ignite in the Wild
+        IGNITE IN THE WILD
       </span>
 
-      <span class="k" style="color:rgba(242,242,243,.8)">
+      <span class="k" style="
+        color:rgba(242,242,243,.80);
+      ">
         50°S
       </span>
     </div>
 
-    <div
-      class="band"
-      style="
-        padding-bottom:0;
-        display:flex;
-        flex-direction:column;
-        gap:clamp(20px,2.8vw,34px);
-      "
-    >
+    <!-- LOWER CONTENT -->
+    <div style="
+      margin-top:auto;
+      width:100%;
+      padding-bottom:clamp(10px,1.5vw,25px);
+    ">
 
-      <h1
-        class="big hero-title"
-        style="
-          margin:0;
-          font-weight:400;
-          line-height:.88;
-        "
-      >
-        Livewells™<br>
+      <h1 class="big hero-title" style="
+        margin:0;
+        font-size:clamp(72px,8.6vw,138px);
+        font-weight:400;
+        line-height:.82;
+        letter-spacing:.005em;
+      ">
+        LIVEWELLS™<br>
         <span style="color:var(--accent-light)">
-          Expeditions
+          EXPEDITIONS
         </span>
       </h1>
 
-      <div
-        class="rule"
-        style="
-          background:rgba(242,242,243,.38);
-        "
-      ></div>
+      <div class="rule" style="
+        background:rgba(242,242,243,.38);
+        margin-top:clamp(30px,3vw,48px);
+        margin-bottom:clamp(30px,3vw,46px);
+      "></div>
 
-      <p
-        class="p hero-intro"
-        style="
-          margin:0;
-        "
-      >
+      <p class="p hero-intro" style="
+        margin:0 0 clamp(32px,3.5vw,50px) 0;
+        max-width:1000px;
+        font-size:clamp(17px,1.5vw,24px);
+        line-height:1.5;
+        color:rgba(242,242,243,.94);
+      ">
         Small-group expeditions built around adventure, recovery and human connection.
       </p>
 
-      <div>
-        <a
-          class="btn"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSeVHOT15DfnvjIFIW8cMSM1BbctI6IoP1zCNfnIcvriVAq0dg/viewform"
-        >
-          Join the expedition
-        </a>
-      </div>
+      <a
+        class="btn"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSeVHOT15DfnvjIFIW8cMSM1BbctI6IoP1zCNfnIcvriVAq0dg/viewform"
+      >
+        JOIN THE EXPEDITION
+      </a>
 
     </div>
 
   </div>
-
 </section>
-
+  
 <!-- 02 NOT A RETREAT -->
 <section style="background:var(--bg);padding:clamp(18px,3vw,44px)">
   <div class="frame" style="padding:clamp(40px,7vw,104px) clamp(26px,5vw,80px);display:flex;flex-direction:column;gap:clamp(24px,3.6vw,46px)"><i class="c1"></i><i class="c2"></i>
@@ -303,37 +293,131 @@ a:hover{color:var(--ink)}
 </section>
 
 <!-- 03 GO FURTHER -->
-<section class="full go-further-section" style="display:flex;flex-direction:column;justify-content:space-between">
-  <img class="bg" src="images/go-further.jpg" alt="Two hikers with arms raised below the towers of Torres del Paine">
-  <div class="veil" style="background:linear-gradient(to bottom,rgba(16,26,36,.05) 0%,rgba(16,26,36,.10) 38%,rgba(16,26,36,.42) 68%,rgba(16,26,36,.92) 100%)"></div>
+<section class="full go-further-section" style="
+  position:relative;
+  width:100%;
+  height:100vh;
+  min-height:800px;
+  overflow:hidden;
+">
 
-<div class="w band" style="padding-top:clamp(42px,6vw,84px)">
-  <div class="k" style="color:#9fc9ee;opacity:1;margin-bottom:clamp(22px,3vw,40px)">03</div>
-    <h2 class="big" style="font-size:clamp(68px,9.5vw,150px);font-weight:400;line-height:.9;letter-spacing:-.025em;margin:0">
-      GO FURTHER.
-    </h2>
-  </div>
+  <img
+    class="bg"
+    src="images/go-further.jpg"
+    alt="Two hikers with arms raised below the towers of Torres del Paine"
+    loading="lazy"
+    style="
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center center;
+    "
+  >
 
-  <div class="w band" style="padding-bottom:clamp(46px,6vw,86px)">
-    <p class="p" style="font-size:clamp(17px,1.55vw,24px);line-height:1.55;color:rgba(242,242,243,.94);max-width:1180px;margin:0 0 clamp(28px,3vw,42px)">
-      Livewells Expeditions takes small groups into some of the world’s most extraordinary environments.<br>
-      Combining adventure, movement, recovery, food and human connection into experiences designed to stay<br class="desktop-only">
-      with you long after you return.
-    </p>
+  <div class="veil" style="
+    position:absolute;
+    inset:0;
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(16,26,36,.05) 0%,
+        rgba(16,26,36,.10) 35%,
+        rgba(16,26,36,.35) 66%,
+        rgba(16,26,36,.82) 100%
+      );
+  "></div>
 
-    <div class="rule" style="background:rgba(242,242,243,.36);margin-bottom:clamp(24px,3vw,38px)"></div>
+  <div class="w" style="
+    position:relative;
+    z-index:2;
+    width:100%;
+    height:100%;
+    padding-top:clamp(45px,5vw,72px);
+    padding-bottom:clamp(50px,5.5vw,82px);
+    display:flex;
+    flex-direction:column;
+  ">
 
-    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap">
-      <span class="big" style="font-size:clamp(44px,5.2vw,82px);font-weight:400;line-height:1">
-        PATAGONIA IS NEXT...
-      </span>
-      <span class="p" style="font-size:clamp(18px,1.7vw,27px);font-style:italic;color:rgba(242,242,243,.9);white-space:nowrap">
-        The edge of the world.
-      </span>
+    <!-- TOP TITLE -->
+    <div>
+      <div class="k" style="
+        color:rgba(242,242,243,.82);
+        margin-bottom:clamp(22px,2vw,30px);
+      ">
+        03
+      </div>
+
+      <h2 class="big" style="
+        margin:0;
+        font-size:clamp(70px,8.2vw,128px);
+        font-weight:400;
+        line-height:.9;
+        letter-spacing:.005em;
+      ">
+        GO FURTHER.
+      </h2>
     </div>
+
+    <!-- LOWER CONTENT -->
+    <div style="
+      margin-top:auto;
+      width:100%;
+    ">
+
+      <p class="p" style="
+        max-width:1180px;
+        margin:0 0 clamp(30px,3vw,44px) 0;
+        color:rgba(242,242,243,.94);
+        font-size:clamp(17px,1.55vw,24px);
+        line-height:1.6;
+      ">
+        Livewells Expeditions takes small groups into some of the world’s most extraordinary environments.<br>
+        Combining adventure, movement, recovery, food and human connection into experiences designed to stay<br>
+        with you long after you return.
+      </p>
+
+      <div class="rule" style="
+        background:rgba(242,242,243,.38);
+        margin-bottom:clamp(30px,3vw,46px);
+      "></div>
+
+      <div style="
+        display:flex;
+        justify-content:space-between;
+        align-items:flex-end;
+        width:100%;
+        gap:40px;
+      ">
+
+        <div class="big" style="
+          font-size:clamp(48px,5.4vw,86px);
+          font-weight:400;
+          line-height:.95;
+          letter-spacing:.005em;
+          white-space:nowrap;
+        ">
+          PATAGONIA IS NEXT...
+        </div>
+
+        <div style="
+          font-size:clamp(17px,1.5vw,24px);
+          font-style:italic;
+          color:rgba(242,242,243,.92);
+          white-space:nowrap;
+          padding-bottom:.3em;
+        ">
+          The edge of the world.
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
 </section>
-
+  
 <!-- 04 WHO IT'S FOR -->
 <section style="background:var(--bg);border-bottom:1px solid var(--line)">
 
