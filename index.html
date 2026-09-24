@@ -165,8 +165,8 @@ a:hover{color:var(--ink)}
 <section class="full hero-section" style="
   position:relative;
   width:100%;
-  height:100vh;
-  min-height:800px;
+  aspect-ratio:3 / 2;
+  min-height:0;
   overflow:hidden;
 ">
 
@@ -190,11 +190,11 @@ a:hover{color:var(--ink)}
     background:
       linear-gradient(
         to bottom,
-        rgba(16,26,36,.24) 0%,
+        rgba(16,26,36,.30) 0%,
         rgba(16,26,36,.08) 30%,
-        rgba(16,26,36,.30) 55%,
-        rgba(16,26,36,.78) 82%,
-        rgba(16,26,36,.96) 100%
+        rgba(16,26,36,.30) 62%,
+        rgba(16,26,36,.72) 82%,
+        rgba(16,26,36,.95) 100%
       );
   "></div>
 
@@ -203,24 +203,25 @@ a:hover{color:var(--ink)}
     z-index:2;
     width:100%;
     height:100%;
-    padding-top:clamp(45px,5vw,72px);
-    padding-bottom:clamp(55px,6vw,90px);
+    padding-top:clamp(42px,5vw,78px);
+    padding-bottom:clamp(55px,6vw,95px);
     display:flex;
     flex-direction:column;
   ">
 
-    <!-- TOP LINE -->
+    <!-- TOP -->
     <div style="
       display:flex;
       justify-content:space-between;
       align-items:center;
       width:100%;
     ">
+
       <span style="
         font-family:var(--h);
         text-transform:uppercase;
         letter-spacing:.22em;
-        font-size:clamp(15px,1.3vw,21px);
+        font-size:clamp(14px,1.25vw,21px);
       ">
         IGNITE IN THE WILD
       </span>
@@ -230,18 +231,19 @@ a:hover{color:var(--ink)}
       ">
         50°S
       </span>
+
     </div>
 
-    <!-- LOWER CONTENT -->
+    <!-- LOWER BRAND CONTENT -->
     <div style="
       margin-top:auto;
       width:100%;
-      padding-bottom:clamp(10px,1.5vw,25px);
+      padding-bottom:clamp(8px,1vw,18px);
     ">
 
       <h1 class="big hero-title" style="
         margin:0;
-        font-size:clamp(72px,8.6vw,138px);
+        font-size:clamp(70px,8.2vw,132px);
         font-weight:400;
         line-height:.82;
         letter-spacing:.005em;
@@ -254,30 +256,33 @@ a:hover{color:var(--ink)}
 
       <div class="rule" style="
         background:rgba(242,242,243,.38);
-        margin-top:clamp(30px,3vw,48px);
-        margin-bottom:clamp(30px,3vw,46px);
+        margin-top:clamp(28px,3vw,46px);
+        margin-bottom:clamp(28px,3vw,44px);
       "></div>
 
       <p class="p hero-intro" style="
-        margin:0 0 clamp(32px,3.5vw,50px) 0;
-        max-width:1000px;
+        margin:0 0 clamp(28px,3vw,46px) 0;
+        max-width:1050px;
+        color:rgba(242,242,243,.94);
         font-size:clamp(17px,1.5vw,24px);
         line-height:1.5;
-        color:rgba(242,242,243,.94);
       ">
         Small-group expeditions built around adventure, recovery and human connection.
       </p>
 
-      <a
-        class="btn"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSeVHOT15DfnvjIFIW8cMSM1BbctI6IoP1zCNfnIcvriVAq0dg/viewform"
-      >
-        JOIN THE EXPEDITION
-      </a>
+      <div>
+        <a
+          class="btn"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeVHOT15DfnvjIFIW8cMSM1BbctI6IoP1zCNfnIcvriVAq0dg/viewform"
+        >
+          JOIN THE EXPEDITION
+        </a>
+      </div>
 
     </div>
 
   </div>
+
 </section>
   
 <!-- 02 NOT A RETREAT -->
@@ -296,8 +301,8 @@ a:hover{color:var(--ink)}
 <section class="full go-further-section" style="
   position:relative;
   width:100%;
-  height:100vh;
-  min-height:800px;
+  aspect-ratio:3 / 2;
+  min-height:0;
   overflow:hidden;
 ">
 
@@ -322,10 +327,11 @@ a:hover{color:var(--ink)}
     background:
       linear-gradient(
         to bottom,
-        rgba(16,26,36,.05) 0%,
-        rgba(16,26,36,.10) 35%,
-        rgba(16,26,36,.35) 66%,
-        rgba(16,26,36,.82) 100%
+        rgba(16,26,36,.08) 0%,
+        rgba(16,26,36,.05) 32%,
+        rgba(16,26,36,.18) 52%,
+        rgba(16,26,36,.48) 76%,
+        rgba(16,26,36,.88) 100%
       );
   "></div>
 
@@ -334,30 +340,32 @@ a:hover{color:var(--ink)}
     z-index:2;
     width:100%;
     height:100%;
-    padding-top:clamp(45px,5vw,72px);
-    padding-bottom:clamp(50px,5.5vw,82px);
+    padding-top:clamp(42px,5vw,78px);
+    padding-bottom:clamp(50px,5.5vw,88px);
     display:flex;
     flex-direction:column;
   ">
 
-    <!-- TOP TITLE -->
+    <!-- TOP -->
     <div>
+
       <div class="k" style="
         color:rgba(242,242,243,.82);
-        margin-bottom:clamp(22px,2vw,30px);
+        margin-bottom:clamp(22px,2.2vw,34px);
       ">
         03
       </div>
 
       <h2 class="big" style="
         margin:0;
-        font-size:clamp(70px,8.2vw,128px);
+        font-size:clamp(70px,8.2vw,132px);
         font-weight:400;
-        line-height:.9;
+        line-height:.88;
         letter-spacing:.005em;
       ">
         GO FURTHER.
       </h2>
+
     </div>
 
     <!-- LOWER CONTENT -->
@@ -367,10 +375,10 @@ a:hover{color:var(--ink)}
     ">
 
       <p class="p" style="
-        max-width:1180px;
-        margin:0 0 clamp(30px,3vw,44px) 0;
+        max-width:1250px;
+        margin:0 0 clamp(28px,3vw,46px) 0;
         color:rgba(242,242,243,.94);
-        font-size:clamp(17px,1.55vw,24px);
+        font-size:clamp(17px,1.5vw,24px);
         line-height:1.6;
       ">
         Livewells Expeditions takes small groups into some of the world’s most extraordinary environments.<br>
@@ -380,7 +388,7 @@ a:hover{color:var(--ink)}
 
       <div class="rule" style="
         background:rgba(242,242,243,.38);
-        margin-bottom:clamp(30px,3vw,46px);
+        margin-bottom:clamp(28px,3vw,46px);
       "></div>
 
       <div style="
@@ -392,7 +400,7 @@ a:hover{color:var(--ink)}
       ">
 
         <div class="big" style="
-          font-size:clamp(48px,5.4vw,86px);
+          font-size:clamp(48px,5.2vw,84px);
           font-weight:400;
           line-height:.95;
           letter-spacing:.005em;
@@ -402,7 +410,7 @@ a:hover{color:var(--ink)}
         </div>
 
         <div style="
-          font-size:clamp(17px,1.5vw,24px);
+          font-size:clamp(17px,1.45vw,23px);
           font-style:italic;
           color:rgba(242,242,243,.92);
           white-space:nowrap;
@@ -416,6 +424,7 @@ a:hover{color:var(--ink)}
     </div>
 
   </div>
+
 </section>
   
 <!-- 04 WHO IT'S FOR -->
