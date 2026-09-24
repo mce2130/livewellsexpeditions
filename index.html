@@ -231,121 +231,155 @@ a:hover{color:var(--ink)}
   }
 
 
-  /* -----------------------------------------
-     03 — GO FURTHER
-     ----------------------------------------- */
+ /* -----------------------------------------
+   03 — GO FURTHER
+   MOBILE ONLY
+   ----------------------------------------- */
 
-  .go-further-section {
-    aspect-ratio: auto !important;
-    min-height: 100svh !important;
-    height: auto !important;
-  }
+.go-further-section {
+  aspect-ratio: auto !important;
+  min-height: 100svh !important;
+  height: auto !important;
+}
 
-  .go-further-section > .bg {
-    object-position: center center !important;
-  }
+/* Shift photograph right so hikers remain in frame */
+.go-further-section > .bg {
+  object-position: 62% center !important;
+}
 
-  .go-further-section > .w {
-    min-height: 100svh;
-    height: auto !important;
-    padding-top: 48px !important;
-    padding-bottom: 48px !important;
-    justify-content: space-between;
-  }
+.go-further-section > .w {
+  min-height: 100svh;
+  height: auto !important;
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
+  justify-content: space-between;
+}
 
-  .go-further-section h2 {
-    font-size: clamp(64px, 18vw, 86px) !important;
-    line-height: .86 !important;
-  }
+.go-further-section h2 {
+  font-size: clamp(64px, 18vw, 86px) !important;
+  line-height: .86 !important;
+}
 
-  .go-further-section p {
-    font-size: 17px !important;
-    line-height: 1.5 !important;
-  }
+.go-further-section p {
+  font-size: 17px !important;
+  line-height: 1.5 !important;
+}
 
-  /* Ignore desktop forced line breaks */
-  .go-further-section p br {
-    display: none;
-  }
+.go-further-section p br {
+  display: none;
+}
 
-  .go-further-section .rule {
-    margin-bottom: 26px !important;
-  }
+.go-further-section .rule {
+  margin-bottom: 26px !important;
+}
 
-  .go-further-section .rule + div {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 12px !important;
-  }
+.go-further-section .rule + div {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 12px !important;
+}
 
-  .go-further-section .rule + div > div:first-child {
-    font-size: clamp(42px, 12vw, 58px) !important;
-    white-space: normal !important;
-  }
+.go-further-section .rule + div > div:first-child {
+  font-size: clamp(42px, 12vw, 58px) !important;
+  white-space: normal !important;
+}
 
-  .go-further-section .rule + div > div:last-child {
-    font-size: 17px !important;
-    white-space: normal !important;
-  }
-
-
-  /* -----------------------------------------
-     04 — BUILT FOR THOSE WHO MOVE DIFFERENTLY
-     ----------------------------------------- */
-
-  .grid6 {
-    grid-template-columns: 1fr !important;
-    gap: 48px !important;
-  }
-
-  .grid6 .card {
-    width: 100%;
-  }
-
-  .grid6 .frame {
-    aspect-ratio: 4 / 5;
-  }
-
-  .grid6 .card h3 {
-    font-size: 34px;
-  }
-
-  .grid6 .card p {
-    font-size: 18px;
-  }
+.go-further-section .rule + div > div:last-child {
+  font-size: 17px !important;
+  white-space: normal !important;
+}
 
 
-  /* -----------------------------------------
-     05 — THE PEOPLE
-     ----------------------------------------- */
+/* -----------------------------------------
+   04 — BUILT FOR THOSE WHO MOVE DIFFERENTLY
+   MOBILE ONLY
+   ----------------------------------------- */
 
-  .people-section {
-    aspect-ratio: auto !important;
-    min-height: 100svh;
-    height: auto;
-  }
+/* Six profiles become one compact editorial grid */
+.grid6 {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 28px 14px !important;
+  width: 100% !important;
+}
 
-  .people-section > .bg {
-    object-position: center center !important;
-  }
+/* Remove desktop card sizing */
+.grid6 .card {
+  width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
 
-  .people-section > .band {
-    min-height: 100svh;
-    justify-content: flex-end;
-    padding-top: 70px !important;
-    padding-bottom: 50px !important;
-  }
+/* Much shorter image cards */
+.grid6 .frame {
+  width: 100% !important;
+  aspect-ratio: 1 / 1.08 !important;
+  height: auto !important;
+  overflow: hidden !important;
+}
 
-  .people-section h2 {
-    font-size: clamp(46px, 12vw, 62px) !important;
-    line-height: .9 !important;
-  }
+/* Keep subjects framed nicely */
+.grid6 .frame img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
 
-  .people-section p {
-    font-size: 17px !important;
-    line-height: 1.5 !important;
-  }
+/* Profile title */
+.grid6 .card h3 {
+  margin-top: 12px !important;
+  margin-bottom: 6px !important;
+  font-size: clamp(22px, 6vw, 29px) !important;
+  line-height: 1 !important;
+}
+
+/* Profile description */
+.grid6 .card p {
+  margin: 0 !important;
+  font-size: 14px !important;
+  line-height: 1.4 !important;
+}
+
+/* Tighten the overall section on mobile */
+.grid6 {
+  margin-top: 30px !important;
+}
+
+
+/* -----------------------------------------
+   05 — THE PEOPLE
+   MOBILE ONLY
+   ----------------------------------------- */
+
+.people-section {
+  aspect-ratio: auto !important;
+  min-height: 100svh;
+  height: auto;
+}
+
+.people-section > .bg {
+  object-position: center center !important;
+}
+
+.people-section > .band {
+  min-height: 100svh;
+  justify-content: flex-end;
+  padding-top: 70px !important;
+  padding-bottom: 50px !important;
+}
+
+/* Slightly smaller so THEM UNFORGETTABLE stays together */
+.people-section h2 {
+  font-size: clamp(42px, 10.5vw, 56px) !important;
+  line-height: .88 !important;
+  letter-spacing: -.01em !important;
+}
+
+.people-section p {
+  font-size: 17px !important;
+  line-height: 1.5 !important;
+}
 
 
   /* -----------------------------------------
