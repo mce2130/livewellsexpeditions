@@ -1238,35 +1238,71 @@ a:hover{color:var(--ink)}
 
 <!-- FOOTER -->
 <footer style="
-  background:#101a24;
-  color:rgba(242,242,243,.68);
-  border-top:1px solid rgba(242,242,243,.12);
+  background:var(--ink);
+  color:var(--paper);
+  border-top:1px solid rgba(242,242,243,.16);
 ">
-
   <div class="w" style="
-    padding-top:clamp(34px,4vw,58px);
-    padding-bottom:clamp(34px,4vw,58px);
+    padding-top:clamp(28px,3vw,42px);
+    padding-bottom:clamp(28px,3vw,42px);
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:30px;
+    gap:24px;
     flex-wrap:wrap;
   ">
 
+    <!-- BRAND -->
     <div class="k" style="
-      color:rgba(242,242,243,.82);
+      color:rgba(242,242,243,.68);
     ">
       LIVEWELLS™ EXPEDITIONS
     </div>
 
-    <div class="k" style="
-      color:rgba(242,242,243,.48);
-    ">
-      © 2026 LIVEWELLS™ · ALL RIGHTS RESERVED
-    </div>
+    <!-- INSTAGRAM -->
+    <a
+      href="https://www.instagram.com/livewellsexpeditions/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Livewells Expeditions on Instagram"
+      style="
+        display:inline-flex;
+        align-items:center;
+        gap:9px;
+        color:rgba(242,242,243,.72);
+        text-decoration:none;
+        font-family:var(--h);
+        font-size:12px;
+        letter-spacing:.16em;
+        text-transform:uppercase;
+        transition:opacity .2s ease;
+      "
+      onmouseover="this.style.opacity='.65'"
+      onmouseout="this.style.opacity='1'"
+    >
+
+      <!-- INSTAGRAM ICON -->
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.6"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+        <circle cx="12" cy="12" r="4"></circle>
+        <circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"></circle>
+      </svg>
+
+      @LIVEWELLSEXPEDITIONS
+
+    </a>
 
   </div>
-
 </footer>
   
   </body>
