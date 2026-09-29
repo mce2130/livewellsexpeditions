@@ -1286,75 +1286,84 @@ footer .footer-inner > div:last-child {
     </div>
 
 
-    <!-- CENTER INSTAGRAM -->
-    <a
-      class="footer-instagram"
-      href="https://www.instagram.com/livewellsexpeditions/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Livewells Expeditions on Instagram"
-      style="
-        position:absolute;
-        left:50%;
-        top:50%;
-        transform:translate(-50%,-50%);
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        color:rgba(242,242,243,.72);
-        text-decoration:none;
-        transition:opacity .2s ease;
-      "
-      onmouseover="this.style.opacity='.6'"
-      onmouseout="this.style.opacity='1'"
-    >
-
-      <svg
-        width="18"
-        height="18"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="1.6"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        aria-hidden="true"
-      >
-        <rect x="2" y="2" width="20" height="20" rx="5"></rect>
-        <circle cx="12" cy="12" r="4"></circle>
-        <circle
-          cx="17.5"
-          cy="6.5"
-          r=".8"
-          fill="currentColor"
-          stroke="none"
-        ></circle>
-      </svg>
-
-    </a>
-    <!-- EMAIL -->
-<a
-  href="mailto:admin@livewells.org"
-  class="footer-email"
+   <!-- CENTER INSTAGRAM + EMAIL -->
+<div
+  class="footer-center"
   style="
     position:absolute;
     left:50%;
-    top:calc(50% + 26px);
-    transform:translateX(-50%);
-    color:rgba(242,242,243,.48);
-    text-decoration:none;
-    font-family:var(--h);
-    font-size:12px;
-    letter-spacing:.16em;
-    text-transform:uppercase;
-    white-space:nowrap;
-    transition:opacity .2s ease;
+    top:50%;
+    transform:translate(-50%,-50%);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    text-align:center;
   "
-  onmouseover="this.style.opacity='.65'"
-  onmouseout="this.style.opacity='1'"
 >
-  ADMIN@LIVEWELLS.ORG
-</a>
+
+  <!-- INSTAGRAM -->
+  <a
+    href="https://www.instagram.com/livewellsexpeditions/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Livewells Expeditions on Instagram"
+    style="
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:rgba(242,242,243,.72);
+      text-decoration:none;
+      transition:opacity .2s ease;
+    "
+    onmouseover="this.style.opacity='.6'"
+    onmouseout="this.style.opacity='1'"
+  >
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+      <circle cx="12" cy="12" r="4"></circle>
+      <circle
+        cx="17.5"
+        cy="6.5"
+        r=".8"
+        fill="currentColor"
+        stroke="none"
+      ></circle>
+    </svg>
+  </a>
+
+  <!-- EMAIL -->
+  <a
+    href="mailto:admin@livewells.org"
+    style="
+      color:rgba(242,242,243,.58);
+      text-decoration:none;
+      font-family:var(--h);
+      font-size:14px;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      white-space:nowrap;
+      line-height:1;
+      transition:opacity .2s ease;
+    "
+    onmouseover="this.style.opacity='.65'"
+    onmouseout="this.style.opacity='1'"
+  >
+    ADMIN@LIVEWELLS.ORG
+  </a>
+
+</div>
 
 
     <!-- RIGHT -->
