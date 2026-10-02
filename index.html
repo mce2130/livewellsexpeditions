@@ -538,7 +538,96 @@ footer .footer-inner > div:last-child {
   margin-left: 0 !important;
   text-align: center !important;
 }
+footer .footer-inner > div:last-child {
+  order: 3 !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  text-align: center !important;
+}
 
+
+/* =========================================
+   FINAL MOBILE 07 + FOOTER FIX
+   ========================================= */
+
+/* 07 — move the entire content composition lower */
+#invitation > div:last-child {
+  padding-top: 245px !important;
+}
+
+/* 07 — IGNITE IN THE WILD on one line */
+#invitation h2 {
+  font-size: clamp(43px, 11.5vw, 55px) !important;
+  line-height: .88 !important;
+  white-space: nowrap !important;
+}
+
+/* MOBILE FOOTER */
+footer .footer-inner {
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0 !important;
+  padding-top: 46px !important;
+  padding-bottom: 46px !important;
+  text-align: center !important;
+}
+
+/* LIVEWELLS EXPEDITIONS */
+footer .footer-inner > div:first-child {
+  position: relative !important;
+  order: 1 !important;
+  width: 100% !important;
+  margin: 0 0 22px 0 !important;
+  text-align: center !important;
+}
+
+/* INSTAGRAM + EMAIL */
+footer .footer-center {
+  position: relative !important;
+  left: auto !important;
+  top: auto !important;
+  transform: none !important;
+  order: 2 !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  margin: 0 0 26px 0 !important;
+}
+
+/* EMAIL */
+footer .footer-center a:last-child {
+  position: relative !important;
+  left: auto !important;
+  top: auto !important;
+  transform: none !important;
+  display: block !important;
+  margin: 0 !important;
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+/* COPYRIGHT */
+footer .footer-inner > div:last-child {
+  position: relative !important;
+  order: 3 !important;
+  width: 100% !important;
+  margin: 0 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+
+}  /* KEEP THIS — closes mobile @media */
+
+</style>
 }
 </style>
 </head>
